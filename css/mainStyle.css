@@ -1,0 +1,21 @@
+* {
+      color: white;
+      background-color: #212121;
+}
+
+.main-block {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+}
+
+#profile-picture {
+      width: 10%;
+      height: 10%;
+
+      border-radius: 50%;
+
+      background-color: rgba(21, 21, 21, 0.5);
+
+      margin: 10px 45%;
+}
