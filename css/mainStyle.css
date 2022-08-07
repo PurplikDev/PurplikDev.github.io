@@ -10,12 +10,12 @@
 }
 
 #profile-picture {
-      width: 10%;
-      height: 10%;
+      width: 50%;
+      height: 50%;
 
       border-radius: 50%;
 
       background-color: rgba(21, 21, 21, 0.5);
 
-      margin: 10px 45%;
+      margin: 10px 25%;
 }
