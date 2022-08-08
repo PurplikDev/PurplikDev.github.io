@@ -30,12 +30,37 @@ body {
 }
 
 #main-block #username {
-      font-size: 50px;
+      font-size: 65px;
+      text-align: center;
 }
 
 #profile-picture {
+      clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+      animation: clipRotateAnim 20s linear infinite;
+      position: relative;
+      overflow: hidden;
+
       width: 384px;
       height: 384px;
-
-      margin-bottom: 5%;
 }
+
+#profile-picture:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: url(../images/purplik-nonagon-base.png);
+      background-size: cover;
+      animation: inherit;
+      animation-direction: reverse;
+
+
+}
+
+  @keyframes clipRotateAnim {
+      to {
+          transform: rotate(360deg)
+      }
+  }
