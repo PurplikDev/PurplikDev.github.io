@@ -1,0 +1,15 @@
+#header {
+      height: 75px;
+      width: 100%;
+
+      background-color: rgba(0, 0, 0, 0.5);
+}
+
+h1#header-name {
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0);
+
+      font-size: 35px;
+
+      padding: 17.5px 0px 17.5px 2.5%;
+}
