@@ -16,6 +16,8 @@ h1#header-name {
       font-size: 35px;
 
       margin: 17.5px 0px 17.5px 50px;
+
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #header-menu {
@@ -32,6 +34,12 @@ h1#header-name {
       right: 0px;
 }
 
-#header-menu h1 {
+#header-menu h2 {
       background-color: rgb(10, 10, 10, 1);
+
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#header-menu h2:hover {
+      color: #cccccc;
 }

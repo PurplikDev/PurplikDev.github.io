@@ -17,8 +17,6 @@ body {
       height: 95%;
 
       padding: 2.5%;
-
-
 }
 
 #main-block {
@@ -32,6 +30,9 @@ body {
 #main-block #username {
       font-size: 65px;
       text-align: center;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+      margin-top: 25px;
 }
 
 #profile-picture {
