@@ -34,12 +34,18 @@ h1#header-name {
       right: 0px;
 }
 
-#header-menu h2 {
+#header-menu h2 a {
       background-color: rgb(10, 10, 10, 1);
 
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+      transition: 0.2s;
+
+      text-decoration: none;
 }
 
-#header-menu h2:hover {
-      color: #cccccc;
+#header-menu h2 a:hover {
+      color: #bd77ff;
+
+      transition: 0.3s;
 }
