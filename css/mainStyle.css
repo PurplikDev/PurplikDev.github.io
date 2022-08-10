@@ -41,6 +41,8 @@ body {
       color: #bd77ff;
 
       transition: 0.3s;
+
+      cursor: default;
 }
 
 #profile-picture {
