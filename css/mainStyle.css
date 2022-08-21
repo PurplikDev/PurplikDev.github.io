@@ -75,3 +75,10 @@ body {
           transform: rotate(360deg)
       }
 }
+
+.block-one {
+      height: 85vh;
+      width: 100vw;
+
+      top: 0;
+}
