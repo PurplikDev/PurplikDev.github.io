@@ -7,16 +7,19 @@
 
 body {
       background-color: #151515;
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+      display: none;
 }
 
 #display-block {
       display: flex;
       justify-content: center;
-      
-      width: 95%;
-      height: 95%;
 
-      padding: 2.5%;
+      height: 85vh;
 }
 
 #main-block {
@@ -76,9 +79,70 @@ body {
       }
 }
 
-.block-one {
-      height: 85vh;
-      width: 100vw;
+.block {
+      height: 100vh;
+      width: auto;
 
-      top: 0;
+      border: rgba(0, 0, 0, 0) solid 1px; /* SOMEHOW THIS IS HOLDING IT ALL TOGETHER??!?!?!?!?!*/
+}
+
+#about-me {
+      background-color: rgba(0, 0, 0, 0.5);
+
+      width: 80%;
+      height: 75%;
+
+      margin: 5% 10%;
+
+      position: absolute;
+      top: 150%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+}
+
+#about-me-text {
+      width: 40%;
+      height: auto;
+      padding: 1% 5vh;
+      margin: 0 7.5%;
+
+      font-size: 25px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+      float: left;
+
+
+
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+}
+
+#about-me-image {
+      float: right;
+
+      width: 40%;
+      height: auto;
+
+      margin: 0 7.5%;
+
+      display: flex;
+      justify-content: center;
+
+      position: absolute;
+      top: 50%;
+      right: 0;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+}
+
+#about-me-image img {
+      width: 750px;
+      height: 750px;
+}
+
+hr#bottom {
+      margin-top: 50px;
+      border: solid 0 rgba(0, 0, 0, 0);
 }
