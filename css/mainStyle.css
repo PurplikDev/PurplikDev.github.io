@@ -138,8 +138,8 @@ body::-webkit-scrollbar {
 }
 
 #about-me-image img {
-      width: 750px;
-      height: 750px;
+      width: 90%;
+      height: 90%;
 }
 
 hr#bottom {
