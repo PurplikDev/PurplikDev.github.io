@@ -9,7 +9,7 @@
       <meta property="og:title" content="Purplik's Portfolio" />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="http://PurplikDev.github.io/" />
-      <meta property="og:image" content="https://purplikdev.github.io./images/pfp.png" />
+      <meta property="og:image" content="https://purplikdev.github.io./images/plague_purp.png" />
       <meta property="og:description" content="Hey, this is my uhhh... site I guess?" />
       <meta name="theme-color" content="#151515">
 
@@ -17,11 +17,12 @@
 
       <link href="css/mainStyle.css" rel="stylesheet">
       <link href="css/headerStyle.css" rel="stylesheet">
+      <link href="css/projectStyle.css" rel="stylesheet">
 
       <!-- TITLE AND   ICON-->
 
       <title>Purplik</title>
-      <link rel="icon" type="image/x-icon" href="images/pfp.png">
+      <link rel="icon" type="image/x-icon" href="images/plague_purp.png">
 
 </head>
 <body>
@@ -38,7 +39,7 @@
             <div id="display-block">
                   <div id="main-block">
                         <div id="profile-picture"></div>
-                        <h1 id="username">Purplik</h1>
+                        <h1 id="username" class="hovertext">Purplik</h1>
                   </div>
             </div>
       </div>
@@ -59,29 +60,40 @@
                   </div>
             </div>
       </div>
-<!--
-      <div class="block">
+
+      <div class="project-block">
             <div id="projects">
                   <div id="projects-text-main">
                         <b><h2>My projects.</h2></b> <br>
                         <p>Well, as I said I like to make Minecraft mods and program games, of course I have some of my projects to present.</p> <br>
                   </div>
-
-                  <div id="project-text">
-                        <b><h2>Sup. I'm Purplik.</h2></b> <br>
-                        <p>Sometimes people call me Purp. I'm a self taught Java Minecraft Modder, I know, so unique, quirky and original. I also like making games, mostly roguelikes or fast paced games.</p> <br>
-                        <p>I also like music. I mostly listen to King Gizzard and the Wizard Lizard or video game soundtracks.</p>
-                        <br>
-                        <p>Sometimes I also play games, don't have that much time for them but I still enjoy them when I do. My favorites are Minecraft, especially Modded, Deep Rock Galactic and Darkest Dungeon.</p>
-                        
+                  <div id="project">
+                        <div id="project-text">
+                              <b><h2><a href="https://www.curseforge.com/minecraft/mc-mods/hats-cosmetics" target="_blank" class="hovertextlink">Hats & Cosmetics</a></h2></b> <br>
+                              <p>Hats & Cosmetics is a Mod for Minecraft Java Edition written is Java via Forge API.</p> <br>
+                              <p>In games I like to customize my characters and unfortunately in Minecraft it's not that much possible, at least not in a way I would like to. So I made Hats & Cosmetics.</p>
+                              <p>It only started as a silly project but eventually it turned into a serious project with over 10.000 downloads on CurseForge and with <i>not so regular updates</i>.</p>
+                              
+                        </div>
+                        <div id="project-image">
+                              <img src="./images/hat.png">  
+                          </div>
                   </div>
 
-                  <div id="project-image">
-                      <img src="./images/purplik_no.png">  
+                  <div id="project">
+                        <div id="project-text-2">
+                              <b><h2><a href="https://www.curseforge.com/minecraft/mc-mods/darkest-stress" target="_blank" class="hovertextlink">Darkest Stress</a></h2></b> <br>
+                              <p>Just like Hats & Cosmetics Darkest Stress is a Mod for Minecraft Java Edition written is Java via Forge API.</p> <br>
+                              <p>I started working on this project around the same time I started playing Darkest Dungeon, and since I wanted to practice Player Capabilities I decided to replicated Darkest Dungeon's Stress mechanic.</p> <br>
+                              <p> This mod is supposed to be featured in as of yet unreleased project by <a href="https://www.curseforge.com/members/thekapparcrew/projects" target="_blank" class="hovertextlink">The Kappar Crew</a>.</p>
+                        </div>
+                        <div id="project-image-2">
+                              <img src="./images/darkest_stress.png">  
+                          </div>
                   </div>
             </div>
       </div>
--->
+
       <hr id="bottom">
       <script src="js/script.js"></script>
 </body>

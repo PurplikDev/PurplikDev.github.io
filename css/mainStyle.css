@@ -40,12 +40,28 @@ body::-webkit-scrollbar {
       transition: 0.2s;
 }
 
-#main-block #username:hover {
+.hovertext {
+      text-decoration: none;
+}
+
+.hovertext:hover {
       color: #bd77ff;
 
       transition: 0.3s;
 
       cursor: default;
+}
+
+.hovertextlink {
+      text-decoration: none;
+}
+
+.hovertextlink:hover {
+      color: #bd77ff;
+
+      transition: 0.3s;
+
+      cursor:pointer;
 }
 
 #profile-picture {
@@ -65,7 +81,7 @@ body::-webkit-scrollbar {
       bottom: 0;
       left: 0;
       right: 0;
-      background: url(../images/pfp.png);
+      background: url(../images/plague_purp.png);
       background-size: cover;
       animation: inherit;
       animation-direction: reverse;
@@ -84,6 +100,14 @@ body::-webkit-scrollbar {
       width: auto;
 
       border: rgba(0, 0, 0, 0) solid 1px; /* SOMEHOW THIS IS HOLDING IT ALL TOGETHER??!?!?!?!?!*/
+}
+
+.project-block {
+      height: 200vh;
+      width: auto;
+
+      border: rgba(0, 0, 0, 0) solid 1px; /* SOMEHOW THIS IS HOLDING IT ALL TOGETHER??!?!?!?!?!*/
+
 }
 
 #about-me {
@@ -145,77 +169,4 @@ body::-webkit-scrollbar {
 hr#bottom {
       margin-top: 50px;
       border: solid 0 rgba(0, 0, 0, 0);
-}
-
-#projects {
-      background-color: rgba(0, 0, 0, 0.5);
-
-      width: 80%;
-      height: 75%;
-
-      margin: 5% 10%;
-
-      position: absolute;
-      top: 250%;
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-}
-
-#projects-text-main {
-      width: 80%;
-      height: auto;
-      padding: 1% 5vh;
-      margin: 0 7.5%;
-
-      font-size: 25px;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-      float: left;
-
-
-
-      position: absolute;
-      top: 15%;
-}
-
-#project-text {
-      width: 40%;
-      height: auto;
-      padding: 1% 5vh;
-      margin: 0 7.5%;
-
-      font-size: 25px;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-      float: left;
-
-
-
-      position: absolute;
-      top: 50%;
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-}
-
-#project-image {
-      float: right;
-
-      width: 40%;
-      height: auto;
-
-      margin: 0 7.5%;
-
-      display: flex;
-      justify-content: center;
-
-      position: absolute;
-      top: 50%;
-      right: 0;
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-}
-
-#project-image img {
-      width: 90%;
-      height: 90%;
 }
