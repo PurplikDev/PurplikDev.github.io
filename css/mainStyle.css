@@ -102,14 +102,6 @@ body::-webkit-scrollbar {
       border: rgba(0, 0, 0, 0) solid 1px; /* SOMEHOW THIS IS HOLDING IT ALL TOGETHER??!?!?!?!?!*/
 }
 
-.project-block {
-      height: 200vh;
-      width: auto;
-
-      border: rgba(0, 0, 0, 0) solid 1px; /* SOMEHOW THIS IS HOLDING IT ALL TOGETHER??!?!?!?!?!*/
-
-}
-
 #about-me {
       background-color: rgba(0, 0, 0, 0.5);
 
@@ -130,7 +122,7 @@ body::-webkit-scrollbar {
       padding: 1% 5vh;
       margin: 0 7.5%;
 
-      font-size: 25px;
+      font-size: 1.75vh;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
       float: left;
