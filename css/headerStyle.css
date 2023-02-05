@@ -71,6 +71,7 @@ h1#header-name a{
       h1#header-name {
             margin: 17.5px auto;
             text-align: center;
+            font-size: 25px;
       }
 
       #mobile-navigation {

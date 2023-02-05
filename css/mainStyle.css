@@ -238,9 +238,9 @@ body::-webkit-scrollbar {
       }
 
       .base-container {
-            height: 100vh;
+            height: 110vh;
             grid-template-columns: [left-side] 10vw [first] 80vw [second] 10vw [right-side];
-            grid-template-rows: [top] 15vh 70vh 15vh;
+            grid-template-rows: [top] 15vh 80vh 15vh;
       }
 }
 
