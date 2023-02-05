@@ -9,7 +9,7 @@
       justify-content: space-between;
 }
 
-h1#header-name {
+h1#header-name{
       background-color: rgb(10, 10, 10, 1);
 
       font-size: 35px;
@@ -18,6 +18,10 @@ h1#header-name {
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
       cursor: default;
+}
+
+h1#header-name a{
+      text-decoration: none;
 }
 
 #header-menu {
@@ -33,7 +37,7 @@ h1#header-name {
       right: 0px;
 }
 
-#header-menu h2 a {
+#header-menu h2 a, #mobile-navigation h2 a {
       background-color: rgb(10, 10, 10, 1);
 
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -43,8 +47,34 @@ h1#header-name {
       text-decoration: none;
 }
 
-#header-menu h2 a:hover {
+#header-menu a:hover, #header-name a:hover, #mobile-navigation a:hover {
       color: #bd77ff;
 
       transition: 0.3s;
+}
+
+#mobile-navigation {
+      display: none;
+      background-color: rgb(10, 10, 10, 1);
+      font-size: 20px;
+      text-align: center;
+
+      padding: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+      
+      #header-menu {
+            display: none;
+      }
+
+      h1#header-name {
+            margin: 17.5px auto;
+            text-align: center;
+      }
+
+      #mobile-navigation {
+            display: block;
+      }
+
 }

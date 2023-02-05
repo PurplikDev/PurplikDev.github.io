@@ -1,3 +1,5 @@
+/* GENERAL STUFF */
+
 * {
       color: white;
 
@@ -7,20 +9,41 @@
 
 body {
       background-color: #151515;
-      -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
+      -ms-overflow-style: none;
+      scrollbar-width: none;
 }
 
 body::-webkit-scrollbar {
       display: none;
 }
 
-#display-block {
-      display: flex;
-      justify-content: center;
+/* CSS GRID*/
 
-      height: 85vh;
+.main-container {
+      display: grid;
+      height: 92.5vh;
+      width: 100vw;
+      grid-template-columns: [left-side] 15vw [first] auto [second] 15vw [right-side];
+      grid-template-rows: [top] 10vh 72.5vh 10vh [bottom];
 }
+
+.base-container {
+      display: grid;
+      height: 100vh;
+      width: 100vw;
+      grid-template-columns: [left-side] 10vw [first] 80vw [second] 10vw [right-side];
+      grid-template-rows: [top] 15vh 70vh 15vh;
+}
+
+/*DEBUG STUFF*/
+
+#debug {
+      border: 5px red solid;
+      box-sizing: border-box;
+}
+
+
+/* PFP AND NAME */
 
 #main-block {
       display: flex;
@@ -28,6 +51,11 @@ body::-webkit-scrollbar {
       flex-direction: column;
 
       text-align: center;
+
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
 }
 
 #main-block #username {
@@ -72,6 +100,10 @@ body::-webkit-scrollbar {
 
       width: 384px;
       height: 384px;
+
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
 }
 
 #profile-picture:before {
@@ -87,7 +119,7 @@ body::-webkit-scrollbar {
       animation-direction: reverse;
 }
 
-/* ANIMATIONS */
+/* PROFILE PICTURE ANIMATION */
 
 @keyframes clipRotateAnim {
       to {
@@ -95,72 +127,126 @@ body::-webkit-scrollbar {
       }
 }
 
-.block {
-      height: 100vh;
-      width: auto;
 
-      border: rgba(0, 0, 0, 0) solid 1px; /* SOMEHOW THIS IS HOLDING IT ALL TOGETHER??!?!?!?!?!*/
-}
+
+/* ABOUT ME */
 
 #about-me {
       background-color: rgba(0, 0, 0, 0.5);
 
-      width: 80%;
-      height: 75%;
-
-      margin: 5% 10%;
-
-      position: absolute;
-      top: 150%;
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
 }
 
 #about-me-text {
-      width: 40%;
-      height: auto;
-      padding: 1% 5vh;
-      margin: 0 7.5%;
-
-      font-size: 1.75vh;
+      margin: auto 0 auto 15%;
+      font-size: 2vh;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
       float: left;
-
-
-
-      position: absolute;
-      top: 50%;
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
 }
 
 #about-me-image {
       float: right;
 
-      width: 40%;
       height: auto;
+      width: 80%;
 
-      margin: 0 7.5%;
+      margin: auto;
 
-      display: flex;
-      justify-content: center;
-
-      position: absolute;
-      top: 50%;
-      right: 0;
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-}
-
-#about-me-image img {
-      width: 90%;
-      height: 90%;
       -webkit-transform: scaleX(-1);
       transform: scaleX(-1);
 }
 
-hr#bottom {
-      margin-top: 50px;
-      border: solid 0 rgba(0, 0, 0, 0);
+.box-left, .box-right {
+      width: 50%;
+      height: 100%;
+
+      display: flex;
+      justify-content: center;
+}
+
+.box-left {
+      float: left;
+}
+
+.box-right {
+      float: right;
+}
+
+
+
+
+/* RESPONSIVITY */
+
+@media only screen and (max-width: 900px) {
+      .box-left, .box-right {
+            width: 100%;
+            float: none;
+            height: 50%;
+      }
+
+      #about-me-text {
+            margin: auto 15% auto 15%;
+      }
+
+      #about-me-image {
+            padding: 0;
+      }
+
+      /*
+      .main-container {
+            display: grid;
+            height: 92.5vh;
+            grid-template-columns: [left-side] 15vw [first] auto [second] 15vw [right-side];
+            grid-template-rows: [top] 10vh 72.5vh 10vh [bottom];
+      }
+      */
+      .base-container {
+            height: 200vh;
+            grid-template-rows: [top] 15vh 140vh 15vh;
+      }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+      .box-left {
+            height: 100%;
+      }
+
+      .box-right {
+            height: 0;
+      }
+
+      #main-block {
+      
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+      }
+
+      #profile-picture {
+            animation: none;
+      }
+
+      #about-me-image {
+            display: none;
+      }
+
+      .base-container {
+            height: 100vh;
+            grid-template-columns: [left-side] 10vw [first] 80vw [second] 10vw [right-side];
+            grid-template-rows: [top] 15vh 70vh 15vh;
+      }
+}
+
+@media only screen and (max-width: 384px) {
+      #profile-picture {
+            width: 90vw;
+            height: 90vw;
+      }
 }
