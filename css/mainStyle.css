@@ -196,14 +196,6 @@ body::-webkit-scrollbar {
             padding: 0;
       }
 
-      /*
-      .main-container {
-            display: grid;
-            height: 92.5vh;
-            grid-template-columns: [left-side] 15vw [first] auto [second] 15vw [right-side];
-            grid-template-rows: [top] 10vh 72.5vh 10vh [bottom];
-      }
-      */
       .base-container {
             height: 200vh;
             grid-template-rows: [top] 15vh 140vh 15vh;
@@ -222,7 +214,6 @@ body::-webkit-scrollbar {
       }
 
       #main-block {
-      
             grid-column-start: 1;
             grid-column-end: 4;
             grid-row-start: 2;
