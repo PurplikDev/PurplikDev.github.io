@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+      margin: 0;
+      padding: 0;
+
+      font-family: 'Roboto', sans-serif;
+}
+
+a {
+      color: #171717;
+      text-decoration: none;
+      transition: 0.3s;
+}
+
+a:hover {
+      color: #212121;
+      text-shadow: 1px 1px 2px black;
+      text-decoration: underline;
+}
+
+
+
+/*
+      HEADER STUFF
+*/
+
+.header {
+      width: 100vw;
+      height: 6vh;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.headerContentLeft {
+      margin-left: 2.5vw;
+      height: 5vh;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      cursor: default;
+}
+
+.headerContentLeft:hover > h1:first-child {
+      color: #212121;
+      text-shadow: 1px 1px 2px black;
+}
+
+.headerContentLeft:hover > img:nth-child(2) {
+      animation-name: rotateFlowerIn;
+}
+
+.headerContentLeft h1 {
+      color: #171717;
+      text-shadow: 0.5px 0.5px 1px black;
+      transition: 0.3s;
+}
+
+.headerContentLeft img {
+      margin-left: 10px;
+      height: 4vh;
+      width: auto;
+
+      animation-name: rotateFlowerOut;
+      animation-duration:  1s;
+      animation-timing-function: ease-in-out;
+
+      animation-fill-mode: forwards;
+      -webkit-animation-fill-mode: forwards;
+}
+
+.headerContentRight {
+      margin-right: 2.5vw;
+      height: 5vh;
+      width: 25vw;
+
+      display: flex;
+      justify-content: right;
+      align-items: center;
+}
+
+.headerContentRight h2 {
+      margin-left: 1vw;
+}
+
+
+
+/*
+      MAIN INFO STUFF
+*/
+
+.mainInfo {
+
+      height: 50vh;
+      width: 100vw;
+
+      overflow: hidden;
+
+      
+
+}
+
+.mainInfo:before {
+      background-image: url("../images/placeholder.png");
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      -webkit-filter: blur(15px);
+      filter: blur(15px);
+      content:"";
+
+      height: 100%; 
+      width: 100%;
+      display: block;
+      
+      transform: scale(1.125);
+}
