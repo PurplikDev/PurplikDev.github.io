@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+
+
+/*
+      GENERAL STUFF
+*/
+
 body {
       margin: 0;
       padding: 0;
@@ -9,6 +15,25 @@ body {
 
 a {
       text-decoration: none;
+}
+
+.hidden {
+      opacity: 0;
+      filter: blur(5px);
+      transform: translateX(-25%);
+      transition: all 1s ease-out;
+}
+
+@media(prefers-reduced-motion) {
+      .hidden {
+            transition: none;
+      }
+}
+
+.visible {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateX(0);
 }
 
 
@@ -64,8 +89,8 @@ a {
 }
 
 .headerContentLeft img {
-      margin-left: 10px;
-      height: 4vh;
+      margin-left: 15px;
+      height: 3vh;
       width: auto;
 
       animation-name: rotateFlowerOut;
@@ -136,12 +161,14 @@ a {
 }
 
 .mainInfoBox h1 {
-      font-size: 7.5vh;
+      font-size: 10vh;
+      color: #f9d3ff;
 }
 
 .mainInfoBox h2 {
       font-size: 2.5vh;
       font-weight: 50;
+      transition-delay: 200ms;
 }
 
 .mainInfoBox a {
