@@ -13,6 +13,8 @@ body {
       font-family: 'Roboto', sans-serif;
 
       -ms-overflow-style: none;
+
+    cursor: default;
 }
 
 body::-webkit-scrollbar {
@@ -40,6 +42,16 @@ a {
       opacity: 1;
       filter: blur(0);
       transform: translateX(0);
+}
+
+.regularLink {
+      text-decoration: none;
+      color: black;
+      transition: 0.3s;
+}
+
+.regularLink:hover {
+      color: #e895f5;
 }
 
 
@@ -143,8 +155,10 @@ footer {
     color: white;
 }
 
-
-
+footer a {
+      color: white;
+      text-decoration: none;
+}
 
 /*
       MAIN INFO STUFF
@@ -197,7 +211,7 @@ footer {
 
 .mainInfoBox h1 {
       font-size: 10vh;
-      color: #f9d3ff;
+      color: #f2befa;
 }
 
 .mainInfoBox h2 {
@@ -286,3 +300,4 @@ footer {
 
     margin-bottom: 5vh;
 }
+
