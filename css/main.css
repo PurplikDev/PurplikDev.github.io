@@ -209,7 +209,7 @@ footer a img {
       position: absolute;
 
       height: 35vh;
-      width: 50vw;
+      width: 40vw;
 
       text-align: center;
 
@@ -321,3 +321,7 @@ footer a img {
     margin-bottom: 5vh;
 }
 
+.project a {
+      text-decoration: none;
+      font-weight: bold;
+}
