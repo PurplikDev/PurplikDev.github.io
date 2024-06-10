@@ -325,3 +325,31 @@ footer a img {
       text-decoration: none;
       font-weight: bold;
 }
+
+@media screen and (max-width: 1120px){
+
+      .mainInfoBox {
+            width: 90%;
+      }
+
+      .additionalInfoTextBox {
+            width: 90%;
+      }
+
+      .additionalInfoBox {
+            height: 60vh;
+      }
+
+      .currentProject {
+            width: 75%;
+      }
+
+      footer {
+            flex-direction: column;
+      }
+
+      .footerDivRight {
+            visibility: hidden;
+            height: 0px;
+      }
+}
