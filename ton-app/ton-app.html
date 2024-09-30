@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
-		<title>New Game Project</title>
+		<title>Ton App</title>
 		<style>
 html, body, #canvas {
 	margin: 0;
@@ -76,10 +76,6 @@ body {
 	z-index: 1;
 }
 		</style>
-		<link id="-gd-engine-icon" rel="icon" type="image/png" href="ton-app.icon.png" />
-<link rel="apple-touch-icon" href="ton-app.apple-touch-icon.png"/>
-Cross-Origin-Opener-Policy: same-origin
-Cross-Origin-Embedder-Policy: require-corp
 	</head>
 	<body>
 		<canvas id="canvas">
@@ -91,14 +87,13 @@ Cross-Origin-Embedder-Policy: require-corp
 		</noscript>
 
 		<div id="status">
-			<img id="status-splash" src="ton-app.png" alt="">
 			<progress id="status-progress"></progress>
 			<div id="status-notice"></div>
 		</div>
 
 		<script src="ton-app.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"ensureCrossOriginIsolationHeaders":true,"executable":"ton-app","experimentalVK":false,"fileSizes":{"ton-app.pck":64128,"ton-app.wasm":43016933},"focusCanvas":true,"gdextensionLibs":[]};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"ensureCrossOriginIsolationHeaders":true,"executable":"ton-app","experimentalVK":false,"fileSizes":{"ton-app.pck":53664,"ton-app.wasm":43016933},"focusCanvas":true,"gdextensionLibs":[]};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
