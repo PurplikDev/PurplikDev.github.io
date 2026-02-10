@@ -185,12 +185,12 @@ footer a img {
 }
 
 .mainInfoBanner {
-      background-image: url(../images/placeholder.png);
+      background-image: url(../images/cold_front.png);
       background-repeat: no-repeat;
       background-size: cover;
       background-attachment: fixed;
 
-      background-position: top center;
+      background-position:  center;
 
       position: fixed;
 
